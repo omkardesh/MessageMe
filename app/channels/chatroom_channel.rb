@@ -8,3 +8,4 @@ class ChatroomChannel < ApplicationCable::Channel
   end
 end
 
+	
