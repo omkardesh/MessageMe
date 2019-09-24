@@ -1,6 +1,6 @@
 class SessionsController < ApplicationController
 
-	before_action :logged_in_redirect, only: [:new, :create]
+	#before_action :logged_in_redirect, only: [:new, :create]
 
 	def new
 	end
@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
 
 	def destroy
 		session[:user_id] = nil
-		flash[:success] = "You have been logged out"
+		flash[:success] = "You have been logged out successfully !!!"
 		redirect_to login_path
 	end
 
